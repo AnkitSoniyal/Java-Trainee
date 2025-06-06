@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Form</title>
+</head>
+<body>
+<form th:action="@{/hello}" method="post">
+    Name: <input type="text" name="name" id="name" />
+    <input type="submit" value="Submit" />
+</form>
+
+<!-- Show result if available -->
+<p th:text="${result}"></p>
+</body>
+</html>
